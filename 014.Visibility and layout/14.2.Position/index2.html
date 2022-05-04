@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .LT{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 20px;
+        }
+        .LB{
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 20px;
+        }
+        .RT{
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 20px;
+        }
+        .BR{
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 20px;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+        }
+        img{
+            opacity: 0.3;
+            width: 100%;
+            height: auto;
+            border: 2px solid ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Text</h1>
+    <p>Add some text to an image in the top left corner:</p>
+    <div class="container">
+        <img src="/014.Visibility and layout/14.2.Position/flowers.jpg" alt="flowers" width="1000px" height="700px">
+        <div class="LT">Top Left</div>
+        <div class="LB">Bottom Left</div>
+        <div class="RT">Top Right</div>
+        <div class="BR">Bottom Right</div>
+        <div class="center">Center</div>
+    </div>
+</body>
+</html>

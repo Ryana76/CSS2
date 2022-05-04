@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 3000px;
+        }
+        ul{
+            position: fixed;
+            /* bottom: 0;   or:*/
+            top: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: rgb(44, 42, 50);
+            overflow: hidden;
+        }
+        li:not(.right){
+            float: left;
+            border-right: 2px solid white;
+        }
+        .right{float: right;}
+        li a{
+            display: block;
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+            text-align: center;
+        }
+        li a:hover:not(.active){
+            background-color: black;
+        }
+        a.active{
+            background-color: green;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="right"><a class="active" href="#">About</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            color: rgb(58, 56, 56);
+            background-color: aliceblue;
+            text-align: center;
+            padding: 2em;
+        }
+        .navigation{
+            overflow: hidden;
+            background-color: rgb(58, 56, 56);
+        }
+        a{
+            float: left;
+            display: block;
+            background-color: rgb(58, 56, 56);
+            padding: 1em;
+            text-align: center;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        a:hover{
+            background-color: aliceblue;
+            color: rgb(58, 56, 56);
+        }
+        .column{
+            float: left;
+            width: 33.33%;
+            padding: 1em;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width:600px) {
+            .column{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p style="font-weight: bolder;">Resize the browser window to see the responsive effect.</p>
+    </div>
+    <div class="navigation">
+        <a href="#c1">Link1</a>
+        <a href="#c2">Link2</a>
+        <a href="#c3">Link2</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2 id="c1">Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quo minus, laborum facilis aut dolorum similique ea dolore delectus provident omnis repellat aliquid beatae architecto tempore mollitia atque, veniam assumenda!</p>
+        </div>
+        <div class="column">
+            <h2 id="c2">Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quo minus, laborum facilis aut dolorum similique ea dolore delectus provident omnis repellat aliquid beatae architecto tempore mollitia atque, veniam assumenda!</p>
+        </div>
+        <div class="column">
+            <h2 id="c3">Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quo minus, laborum facilis aut dolorum similique ea dolore delectus provident omnis repellat aliquid beatae architecto tempore mollitia atque, veniam assumenda!</p>
+        </div>
+    </div>
+</body>
+</html>

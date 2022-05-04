@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        ul{
+            position: sticky;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            border: 1px solid rgba(128, 128, 128, 0.289);
+            list-style-type: none;
+            overflow: hidden;
+            background-color: gainsboro;
+        }
+        li{float: left;}
+        li a{
+            display: block;
+            color: rgb(77, 76, 76);
+            padding: .9em 1em;
+            text-align: center;
+            text-decoration: none;
+        }
+        li a:hover:not(.active){
+            background-color: rgba(128, 128, 128, 0.544);
+        }
+        a.active{
+            background-color: rgb(48, 176, 123);
+            color: white;
+        }
+        h1{
+            text-align: center;
+            font-size: 4em;
+        }
+        h2{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Scorrere verso il basso</h1>
+    <h2>Scorri verso il basso per vedere l'effetto appiccicoso.</h2>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</body>
+</html>

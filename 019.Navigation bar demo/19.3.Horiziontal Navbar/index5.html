@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        ul.topnav{
+            list-style-type: none;
+            background-color: #38444d;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        ul.topnav li{float: left;}
+
+        ul.topnav li a{
+            display: block;
+            padding: 1em;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.bcolor){background-color: red;}
+
+        .in-dropdown{
+            display: none;
+            position: absolute;
+            background-color: #38444d;
+            width: 200px;
+            border-top: 1px solid white;
+            box-shadow: 0 8px 16px 0px rgba(2, 2, 2, 0.207);
+        }
+        
+        .bcolor:hover{
+            background-color: aliceblue;
+            border: 1px solid rgba(83, 82, 82, 0.478);
+            color: #38444d;
+        }
+
+        li.dropdown:hover .in-dropdown{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li class="dropdown"><a href="#">Dropdown</a>
+            <div class="in-dropdown">
+                <a class="bcolor" href="#">Link1</a>
+                <a class="bcolor" href="#">Link2</a>
+                <a class="bcolor" href="#">Link3</a>
+            </div>
+        </li>
+    </ul>
+
+    <div>
+        <h1>Dropdown Menu inside a Navigation Bar</h1>
+        <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+    </div>
+</body>
+</html>

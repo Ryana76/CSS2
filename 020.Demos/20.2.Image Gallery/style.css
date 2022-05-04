@@ -1,0 +1,36 @@
+div.gallery{
+    border: 2px solid black;
+}
+div.gallery:hover{
+    opacity: .6;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+div.desc{
+    text-align: center;
+    padding: 1em;
+}
+*{
+    box-sizing: border-box;
+}
+div.foto{
+    float: left;
+    padding: 0 6px;
+    width: 24.9%;
+}
+@media screen and (max-width:1000px) {
+    
+    div.foto{
+        width: 49.9%;
+        margin: 6px 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    div.foto{
+        width: 100%;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            color: black;
+        }
+        p{color: red;}
+
+        .test{color: green;}
+
+        #demo{color: blue;}
+    </style>
+</head>
+<body>
+    <div class="ex1">
+        <h1>In questo esempio, abbiamo utilizzato l'elemento "p" come selettore e specificato un colore rosso per questo elemento. Il testo sarà rosso:</h1>
+        <p>Hello world!</p>
+    </div>
+    <hr>
+    <div class="ex2">
+        <h1>In questo esempio, abbiamo aggiunto un selettore di classe (denominato "test") e specificato un colore verde per questa classe. Il testo ora sarà verde (anche se abbiamo specificato un colore rosso per il selettore di elementi "p". Questo perché al selettore di classe viene data una priorità più alta:</h1>
+        <p class="test">Hello World!</p>
+    </div>
+    <hr>
+    <div class="ex3">
+        <h1>In questo esempio, abbiamo aggiunto il selettore id (denominato "demo"). Il testo ora sarà blu, perché al selettore id viene data una priorità più alta:</h1>
+        <p id="demo" class="test">Hello Wolrd!</p>
+    </div>
+    <hr>
+    <div class="ex4">
+        <h1>In questo esempio, abbiamo aggiunto uno stile in linea per l'elemento "p". Il testo ora sarà rosa, perché lo stile in linea ha la massima priorità:</h1>
+        <p id="demo" class="test" style="color: pink;">Hello Wolrd!</p>
+    </div>
+</body>
+</html>

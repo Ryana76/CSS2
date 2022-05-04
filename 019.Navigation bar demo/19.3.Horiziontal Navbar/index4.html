@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 3000px;
+        }
+        ul.topnav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(56, 56, 56);
+            overflow: hidden;
+        }
+        ul.topnav li{float: left;}
+        ul.topnav li.right{float: right;}
+        ul.topnav li a{
+            display: block;
+            color: white;
+            padding: .9em 1em;
+            text-align: center;
+            text-decoration: none;
+        }
+        ul.topnav li a:hover:not(.active){
+            background-color: black;
+        }
+        ul.topnav li a.active{
+            background-color: green;
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right, ul.topnav li{float: none;}
+        }
+
+        @media screen and (min-width: 1500px) {
+            
+            ul.topnav li.right, ul.topnav li{
+                float: none;
+            }
+            ul.topnav{
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                width: 15%;
+            }
+            ul.topnav li a{
+                text-align: left;
+            }
+            div.contain{
+                margin-left: 15%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="right"><a href="#">About</a></li>
+    </ul>
+    <div class="contain" style="padding: 0 2em;">
+        <h1>Responsive Topnav Example</h1>
+
+        <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        <strong>Resize the browser window to see the effect.</strong>
+    </div>
+
+    
+</body>
+</html>

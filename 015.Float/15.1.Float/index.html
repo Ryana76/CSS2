@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.main, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1, .box2{
+            border: 2px solid black;
+        }
+        .img1{
+            float: right;
+            margin: 2%;
+        }
+        .img2{
+            float: left;
+            margin: 2%;
+        }
+        .box1, .box2, div::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .Div{
+            float: left;
+        }
+        .Div.d1{
+            background-color: red;
+            padding: 2%;
+        }
+        .Div.d2{
+            background-color: yellow;
+            padding: 2%;
+        }
+        .Div.d3{
+            background-color: green;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Esempio - float: destra;</h1>
+        <p>L'esempio seguente specifica che un'immagine deve fluttuare a destra in un testo:</p>
+        <p class="box1">
+            <img class="img1" src="/014.Visibility and layout/14.7.Opacity/pink1.jpg" alt="pink2" width="30%" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia excepturi velit, quidem aperiam dolores iste maxime ullam totam. Facere distinctio explicabo sit dignissimos nesciunt velit pariatur sint, voluptatibus cupiditate!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla magni iusto fugiat quaerat consectetur officia omnis eligendi quidem nobis reprehenderit eum atque, distinctio vitae. Dolores ducimus dignissimos itaque earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia similique id qui obcaecati, quis, aperiam nesciunt repellendus dolorem veniam itaque distinctio ipsam eaque. Modi rem magni quos eveniet, vel accusamus.
+        </p>
+    </div>
+
+    <div>
+        <h1>Esempio - float: sinistra;</h1>
+        <p>L'esempio seguente specifica che un'immagine deve fluttuare a sinistra in un testo:</p>
+        <p class="box2">
+            <img class="img2" src="/014.Visibility and layout/14.7.Opacity/pink2.jpg" alt="pink2" width="20%">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus minus soluta doloribus accusantium reprehenderit esse dolor ipsum neque, totam quisquam cumque quasi non expedita placeat harum quia qui ipsam quos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dolor, necessitatibus aperiam possimus optio illum ab consequuntur nam quos porro, aliquid, sunt accusantium officiis! Dolore repudiandae hic vero corrupti ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nulla vero pariatur provident recusandae quia libero magnam aliquam nesciunt consequuntur! Illum voluptatem consequatur quo dicta ducimus exercitationem, soluta cumque quibusdam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, nam ea nesciunt aliquam corporis ipsum maxime eum suscipit dolor quos cupiditate sed. Alias iste quae at rem. Ad, aspernatur nostrum?
+        </p>
+    </div>
+
+    <div>
+        <h1>Float Next To Each Other</h1>
+        <p>In this example, the three divs will float next to each other.</p>
+        <div class="Div d1">Div1</div>
+        <div class="Div d2">Div2</div>
+        <div class="Div d3">Div3</div>
+    </div>
+    <hr>
+</body>
+</html>

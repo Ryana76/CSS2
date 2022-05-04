@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        /* HEADER STYLE */
+            .header{
+                background-color: bisque;
+                border: 10px solid black;
+                overflow: hidden;
+                
+            }
+            .H{
+                text-align: center;
+                padding: 1em;
+                float: left;
+            }
+            .H.L1, .H.L2, .H.R1, .H.R2{
+                width: 15%;
+                
+            }
+            .H.C{
+                width: 40%;
+            }
+            
+        /* NAVIGATION */
+            .nav{
+                background-color: black;
+                overflow: hidden;
+            }
+            a{
+                float: left;
+                color: bisque;
+                text-decoration: none;
+                border-left: 10px solid black;
+                border-right: 10px solid black;
+                border-bottom: 10px solid black;
+                display: block;
+                width: 33.33%;
+                padding: 1em;
+            }
+            a:hover{
+                color: black;
+                background-color: bisque;
+            }
+        
+        /* CONTENUTO STYLE */
+            .row{
+                background-color: rgba(255, 228, 196, 0.378);
+                border: 10px solid;
+            }
+            .column{
+                float: left;
+                padding: 1em;
+            }
+            .column.side{
+                width: 25%;
+            }
+            .column.center{
+                width: 50%;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+        
+        /* FOR WIDTH 600< */
+            @media screen and (max-width: 600px) {
+                .column.side, .column.center, .H.L1, .H.L2, .H.R1, .H.R2, .H.C, a {
+                    width: 100%;
+                }
+                
+            }
+
+        /* FOOTER STYLE */
+            .footer{
+                text-align: center;
+                background-color: rgba(255, 228, 196, 0.415);
+                padding: 10px;
+                border: 10px solid black;
+            }
+            
+    </style>
+</head>
+<body>
+
+    <!-- HEADER BODY -->
+        <div class="header">
+            <p class="H L1">Welcome</p>
+            <p class="H L2">prova</p>
+            <h1 class="H C">Aryana</h1>
+            <p class="H R1">prova</p>
+            <p class="H R2">weee</p>
+        </div>
+        
+    <!-- NAVIGATION BODY -->
+        <div class="nav">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+        </div>
+
+    <!-- CONTENUTO BODY -->
+        <div class="row">
+            <div class="column side">
+                <h2>Side</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores molestias nulla tempore non</p>
+            </div>
+
+            <div class="column center">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At aspernatur quisquam repellendus tenetur, voluptates est assumenda veritatis aliquid optio? Laudantium praesentium dolorem beatae enim et quaerat doloremque ipsa asperiores officia.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae velit soluta, iusto doloribus enim quo porro ipsum nesciunt saepe omnis dolore magnam sit earum excepturi, expedita vero sapiente, esse ullam.</p>
+            </div>
+            <div class="column side">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus tempora dicta qui, tempore consectetur temporibus ratione ab</p>
+            </div>
+        </div>
+        
+    <!-- FOOTER BODY -->
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+</body>
+</html>

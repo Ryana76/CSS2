@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myFarms{
+            from{background-color: purple; left: 0; top: 0;}
+            to{background-color: blue; left: 0; top: 300px;}
+        }
+        div{
+            position: relative;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            animation: myFarms .5s infinite linear 1s alternate-reverse;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Animation</h1>
+
+    <p>Let the div element retain the style values set by the last keyframe when the    animation ends:</p>
+
+    <div></div>
+
+</body>
+</html>

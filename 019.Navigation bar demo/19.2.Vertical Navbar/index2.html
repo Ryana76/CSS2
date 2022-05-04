@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            position: fixed;
+            background-color: aliceblue;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: max(25%, 200px);
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            text-decoration: none;
+            display: block;
+            padding: 1em ;
+            color: black;
+        }
+        .active{
+            background-color: green;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: gray;
+            color: white;
+        }
+        .contain{
+            position: absolute;
+            left: max(25%, 200px);
+            padding: 0 1em;
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div class="contain">
+        <h2>Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+    </div>
+</body>
+</html>

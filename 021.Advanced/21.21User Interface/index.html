@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ex0{
+            border: 2px solid black;
+            width: 300px;
+            padding: 1em;
+            resize: none;
+            overflow: auto;
+        }
+        div.ex1{
+            border: 2px solid black;
+            margin: 20px;
+            outline: 5px solid red;
+            outline-offset: 15px;
+        }
+        div.ex2{
+            border: 2px solid black;
+            margin: 20px;
+            outline: 5px dashed blue;
+            outline-offset: 5px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>The resize Property</h1>
+
+    <div class="ex0">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h1>The outline-offset Property</h1>
+
+    <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+    <br>
+
+    <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+
+</body>
+</html>

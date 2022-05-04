@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ex1{
+            list-style-type: circle;
+        }
+        .ex2{
+            list-style-type: square;
+        }
+        .ex3{
+            list-style-type: upper-roman;
+        }
+        .ex4{
+            list-style-type: lower-alpha;
+        }
+        #coffe{
+            list-style-image: url('coffee_icon.png');
+        }
+        #tea{
+            list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAlBJREFUWEft1kuoTWEUB/DfRV5hwsAj1GVgJCUljxgYCFPK2CuvFGUgRWKChAy88iiUUhITAwOvOyAhdRVhwMD7XgMpcWnp29rt9rnn2Pfolqw6nfbe61v//7ce/+9r0cvW0sv4/hP4JzLQipVYhAkYiM94iEs4is5avdaTDPTFTmxE/26a+WPyOV3mU5VAAF7EgkLQDsRvJAYXvu3C1iKJqgSOpLRn8c5gb0p7vIvszMF2zM6BLsOJPIkqBGbiVgryAxH0ZI0S9MEBrEvfoxcm4kPmX4XAFSxMAfZgcx0xCxLXMDf5bcOOqgSG4h0G4AtG4VMDajoLN5NfTMeUqgSm4U5afBXzGwAPl8h0EB+O72kD8f/HUhypjxKERTNF/cP6YRLGYkia+2d4niMYO5+cnmNK3lQhEB19IwW5jN1Yk0QoylO017iAg7ieShY+MaJRwl8Z2IBNeJq6+zzaa6R2NF6ldZHCGLdGrCutCbyXGFfsgXNYml6G86nU3b/HJYdyP99EjaAXfI7lNSQYrcX+VMe87+MkInkSUYJovkEVgLMlLzAdb7MSxCjNS6WYWgh8HCtyjfMII3oAni1tS0r5LS9EIRiHsDoH8BVj8B7RG0uaAJ6FCJzDRSUcViIsy3EXDyqMbXd8owStZVIcgpFP8z1EytY3cfdZqMVlBG5jRgEsJiNK1Gw7W0Ygzu0tzUaqEa+9jMB4PKlzy2kWv85ax3HUO+Tzb1tXd/eBVdhXcrVqJqmOeheSON3isKl38axKqq0egaqBG173n0CvZ+AnnHtkmA01LRsAAAAASUVORK5CYII=');
+        }
+        .coca{
+            list-style-image: url('data:image/png;base64,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');
+        }
+    </style>
+</head>
+<body>
+    <h1>The list-style-type Property</h1>
+    <div>
+        <p>Example of unordered lists:</p>
+        <ul class="ex1">
+            <li id="coffe">Coffee</li>
+            <li id="tea">Tea</li>
+            <li class="coca">Coca Cola</li>
+        </ul>
+        <ul class="ex2">
+            <li id="coffe">Coffee</li>
+            <li id="tea">Tea</li>
+            <li class="coca">Coca Cola</li>
+        </ul>
+    </div>
+    <div>
+        <p>Example of ordered lists:</p>
+        <ol class="ex3">
+            <li id="coffe">Coffee</li>
+            <li id="tea">Tea</li>
+            <li class="coca">Coca Cola</li>
+        </ol>
+        <ol class="ex4">
+            <li id="coffe">Coffee</li>
+            <li id="tea">Tea</li>
+            <li class="coca">Coca Cola</li>
+        </ol>
+    </div>
+</body>
+</html>

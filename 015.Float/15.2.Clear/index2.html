@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1{
+            float: right;
+        }
+        .box1{
+            border: 5px solid pink;
+            padding: 2em;
+        }
+        .box1.oo{overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Without Clearfix</h1>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+    <div class="box1">
+        <img class="img1" src="/014.Visibility and layout/14.7.Opacity/pink3.jpg" alt="" width="20%">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis incidunt in atque ipsam assumenda cupiditate exercitationem, est, maxime officia neque ullam sapiente voluptatem porro voluptate eaque optio quos expedita ipsa?
+    </div>
+    <h1>With Clearfix</h1>
+    <p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+    <div class="box1 oo">
+        <img class="img1" src="/014.Visibility and layout/14.7.Opacity/pink3.jpg" alt="" width="20%">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis incidunt in atque ipsam assumenda cupiditate exercitationem, est, maxime officia neque ullam sapiente voluptatem porro voluptate eaque optio quos expedita ipsa?
+    </div>
+</body>
+</html>

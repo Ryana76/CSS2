@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.mask1{
+            mask-image: url(w3logo.png);
+            -webkit-mask-image: url(w3logo.png);
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+        }
+        div.mask2{
+            mask-image: linear-gradient(black, transparent);
+            -webkit-mask-image: linear-gradient(black, transparent);
+            max-width: 600px;
+            height: 350px;
+            overflow-y: scroll;
+            background: url(img_5terre.jpg) no-repeat;
+        }
+        div p {
+            font-size: 20px;
+            padding: 20px;
+            color: black;
+            background-color: white;
+        }
+        .mask3 {
+            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>The mask-image Property</h1>
+
+    <h3>An image with a mask layer image:</h3>
+    <div class="mask1">
+        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+    <div class="mask2">
+        
+        <p>Le Cinque Terre sono una zona costiera della Liguria, nel nord-ovest dell'Italia. Si trova nella parte occidentale della provincia della Spezia e comprende cinque frazioni: Monterosso al Mare, Vernazza, Corniglia, Manarola e Riomaggiore.</p>
+        <br><br>
+        <p>Le Cinque Terre sono una zona costiera della Liguria, nel nord-ovest dell'Italia. Si trova nella parte occidentale della provincia della Spezia e comprende cinque frazioni: Monterosso al Mare, Vernazza, Corniglia, Manarola e Riomaggiore.
+        </p>
+        <br><br>
+        <p> 
+            Le Cinque Terre sono una zona costiera della Liguria, nel nord-ovest dell'Italia. Si trova nella parte occidentale della provincia della Spezia e comprende cinque frazioni: Monterosso al Mare, Vernazza, Corniglia, Manarola e Riomaggiore.</p>
+    </div>
+    <h3>Original image:</h3>
+    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+    <br><br><br>
+
+    <div class="mask3">
+        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+        
+
+</body>
+</html>

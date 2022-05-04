@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: antiquewhite;}
+        div.div1, div.div2, div.div3{
+            border: 1px solid black;
+            width: 150px;
+            height: 120px;
+            background: url('img_flwr.gif') no-repeat;
+        }
+        div.div1{background-size: contain;}
+        div.div2{background-size: cover;}
+    </style>
+</head>
+<body>
+    
+    <h1>The background-size Property</h1>
+
+    <h2>background-size: contain:</h2>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <h2>background-size: cover:</h2>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <h2>No background-size defined:</h2>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p>Original image:</p>
+    <img src="img_flwr.gif" alt="Flowers" width="224" height="162">
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: absolute;
+            opacity: 0.7;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .box{
+            position: relative;
+        }
+        .index_1{
+            position: relative;
+            border: 2px solid black;
+            margin: 50px;
+            background-color: white;
+            height: 100px;
+            padding: 10px;
+            z-index: 1;
+        }
+        .index_3{
+            position: absolute;
+            z-index: 3;
+            border: 2px solid lightgrey;
+            background-color: lightgray;
+            width: 75%;
+            height: 80px;
+            bottom: -10px;
+            left: 80px;
+        }
+        .index_2{
+            position: absolute;
+            z-index: 2;
+            top: -15px;
+            right: 60px;
+            border: 1px solid pink;
+            background-color: pink;
+            width: 35%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/014.Visibility and layout/14.3.z-index/img_tree.png" alt="img_tree">
+        <h1>This is a heading</h1>
+        <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    </div>
+    <h1>Z-index Example</h1>
+        <p>An element with greater stack order is always above an element with a lower stack order.</p>
+    <div class="box">
+        <div class="index_1">Black box (z-index: 1)</div>
+        <div class="index_3">Grey box (z-index: 3)</div>
+        <div class="index_2">Pink box (z-index: 2)</div>
+    </div>
+</body>
+</html>

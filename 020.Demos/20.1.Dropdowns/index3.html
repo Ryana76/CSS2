@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            background-color: pink;
+            border: none;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown.left{float: left;}
+        .dropdown.right{float: right;}
+        .dropdown.contant{
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            background-color: rgba(173, 216, 230, 0.56);
+            color: white;
+            display: none;
+            min-width: 160px;
+        }
+        .dropdown.contant a{
+            color: black;
+            padding: 30px 32px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown.contant{
+            display: block;
+        }
+        .dropdown.contant a:hover{background-color: rgb(182, 182, 182);}
+        .button:hover{background-color: antiquewhite;}
+    </style>
+</head>
+<body>
+    <div class="dropdown left">
+        <button class="button left">Left</button>
+        <div class="dropdown contant left" style="left: 0;">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+        </div>
+    </div>
+    <div class="dropdown right">
+        <button class="button right">Right</button>
+        <div class="dropdown contant right">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+        </div>
+    </div>
+</body>
+</html>

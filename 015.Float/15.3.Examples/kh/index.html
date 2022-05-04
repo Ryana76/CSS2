@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .boxin{
+            float: left;
+            width: 33.33%;
+            padding: 4em;
+        }
+        .box::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid of Boxes</h1>
+    <p>Float boxes side by side:</p>
+    <div class="box">
+        <div class="boxin" style="background-color: gray;">some text inside the box...</div>
+        <div class="boxin" style="background-color: rgba(128, 128, 128, 0.739);">some text inside the box...</div>
+        <div class="boxin" style="background-color: rgba(128, 128, 128, 0.44);">some text inside the box...</div>
+    </div>
+    <p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+</body>
+</html>

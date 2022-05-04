@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        /* BODY STYLE */
+        body{
+            margin: 0;
+        }
+
+        /* HEADER STYLE */
+        .header{
+            background-color: rgb(248, 221, 225);
+            text-align: center;
+            padding: 2em;
+            color: rgb(46, 46, 46);
+        }
+            
+        /* NAVIGATION STYLE */
+        .navigation{
+            background-color: gray;
+            overflow: hidden;
+        }
+
+        /* a STYLE */
+        a{
+            float: left;
+            color: rgb(248, 221, 225);
+            background-color: gray;
+            padding: 1em;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+
+        /* HOVER DI a STYLE */
+        a:hover{
+            color: gray;
+            background-color: rgb(247, 208, 214);
+        }
+
+        /* COLUMN STYLE */
+        .column{
+            float: left;
+            padding: 10px;
+            border: 3px solid pink;
+        }
+
+        /* MIDDLE COLUMN STYLE */
+        .column.middle{
+            width: 50%;
+            overflow: scroll;
+            height: 700px;
+        }
+
+        /* LEFT RIGHT COLUMN STYLE */
+        .column.side{
+            width: 25%;
+            overflow: scroll;
+            height: 700px;
+        }
+        
+        /* Clear floats after the columns */
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .column.side, .column.middle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <!-- HEADER body -->
+    <div class="header">
+
+        <h1>Header</h1>
+
+        <p>Resize the browser window to see the responsive effect.</p>
+
+    </div>
+
+    <!-- NAVIGATION body -->
+    <div class="navigation">
+        <a href="#">Link_1</a>
+        <a href="#">Link_2</a>
+        <a href="#">Link_3</a>
+    </div>
+
+    <!-- COLUMN body -->
+    <div class="row">
+
+        <!-- LEFT COLUMN body -->
+        <div class="column side">
+
+            <h1>Side</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+
+        </div>
+
+        <!-- MIDDLE COLUMN body -->
+        <div class="column middle">
+
+            <h1>Main Content</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas    sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+
+        </div>
+
+        <!-- RIGHT COLUMN body -->
+        <div class="column side">
+
+            <h1>Side</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+
+        </div>
+        
+    </div>
+</body>
+</html>

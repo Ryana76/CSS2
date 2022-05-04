@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 160px;
+            box-shadow: 0 8px 18px 0 rgba(128, 128, 128, 0.374);
+            padding: 14px 16px;
+            left: 20px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hoverable Dropdown</h1>
+    <p>Move the mouse over the text below to open the dropdown content.</p>
+
+    <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-content">
+            <p>HELLOOOOOO!</p>
+        </div>
+    </div>
+</html>

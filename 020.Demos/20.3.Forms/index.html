@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        img{
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 0;
+            margin: 0;
+        }
+        form{
+            position: relative;
+            z-index: 1;
+        }
+        label{
+            color: pink;
+        }
+        input{
+            width: 100%;
+            margin: 1em 1em 1em 0;
+            padding: 1em;
+            border: none;
+            border-bottom: 3px solid pink;
+            background-color: gray;
+            color: pink;
+            font-size: 1em;
+        }
+        
+        input:hover{background-color: lightgray; color: black;}
+        input:focus{background-color: rgb(246, 193, 201); 
+            color: black;
+            border: none;
+            border-bottom:2px solid pink ;}
+        div.main{
+            position: relative;
+            height: 100%; 
+            background-color: white; 
+            margin: 0;
+            z-index: 1;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.267);
+            padding-bottom: 30px;
+            top: 20px;
+            margin:1em 200px 0 200px;
+            border-radius:80px 80px;
+            z-index: 2;
+        }
+        div.top{
+            position: relative;
+            z-index: 1;
+            
+        }
+        .Lname{
+            background-image: url(/020.Demos/20.3.Forms/969259_magnifier_search_seo_magnifying_zoom_icon.png);
+            background-repeat: no-repeat;
+            background-position: 10px;
+            padding-left: 40px;
+            width: 130px;
+            transition: width .4s ease-in-out;
+        }
+        .Lname:focus{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="/020.Demos/20.2.Image Gallery/img_forest.jpg" alt="">
+    <div class="top">
+        <h1>A full-width input field</h1>
+        <form style="background-color: rgba(255, 255, 255, 0.593); padding: 1em;">
+            <label for="fname"> First Name</label>
+            <input type="text" id="fname" name="fname" value="First Name">
+        </form>
+        <br>
+        <form  style="background-color: rgba(255, 255, 255, 0.544); padding: 1em;">
+            <input class="Lname" type="text" id="Lname" name="Lname" placeholder="Search..">
+        </form>
+    </div>
+<br><br><br>
+<div class="main"></div>
+</body>
+</html>

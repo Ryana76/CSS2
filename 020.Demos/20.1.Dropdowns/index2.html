@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-buttom{
+            background-color: pink;
+            border: 1px solid pink;
+            padding: 1em;
+            cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            position: absolute;
+            z-index: 1;
+            display: none;
+            min-width: 160px;
+            background-color: rgba(232, 223, 223, 0.938);
+            box-shadow: 0 8px 16px 0 rgba(128, 128, 128, 0.464);
+        }
+        .dropdown-content a{
+            color: black;
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown:hover .dropdown-content{display: block;}
+        .dropdown-content a:hover{background-color: rgba(255, 192, 203, 0.439);
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Dropdown Menu</h1>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+
+    <div class="dropdown">
+        <button class="dropdown-buttom">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+        </div>
+    </div>
+
+    <p><strong>Note: </strong>We use href="#" for test links. In a real web site this would be URLs.</p>
+</body>
+</html>

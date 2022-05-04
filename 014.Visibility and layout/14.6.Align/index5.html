@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            border: 3px solid pink;
+            height: 200px;
+            position: relative;
+        }
+        #box p{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Center Vertically - Using position & transform</h1>
+    <p>If padding and line-height are not options, another solution is to use positioning and the transform property:</p>
+    <div id="box">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+</body>
+</html>

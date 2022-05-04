@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        label{
+            padding: .5em;
+            margin: .3em;
+            color: gray;
+        }
+        input[type=text], select, textarea{
+            width: 100%;
+            color: gray;
+            background-color: #f1f1f1;
+            border: 1px solid pink;
+            padding: .5em;
+            margin: .3em;
+        }
+        div.COL-25{
+            margin-top: .5em;
+            float: left;
+            width: 25%;
+        }
+        div.COL-75{
+            margin-top: .5em;
+            float: left;
+            width: 75%;
+        }
+        input[type=submit]{
+            background-color: pink;
+            color: gray;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        div.CONTAINER{
+            background-color: aliceblue;
+            padding: 1.5em;
+        }
+        option{
+            color: gray;
+            background-color: #f1f1f1;
+        }
+        div.ROW::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(255, 84, 110);
+            color: white;
+            cursor: pointer;
+        }
+        select{cursor: pointer;}
+
+        @media screen and (max-width: 600px){
+            div.ROW.BUTTON, div.COL-25, div.COL-75{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Form</h1>
+    <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+    
+    <div class="CONTAINER">
+
+        <form action="index3.html" method="get">
+
+            <div class="ROW">
+                <div class="COL-25">
+                    <label for="FIRST-NAME">First Name</label>
+                </div>
+                <div  class="COL-75">
+                    <input type="text" name="FIRST-NAME" id="FIRST-NAME" placeholder="Your name..">
+                </div>
+            </div>
+            
+            <div class="ROW">
+                <div class="COL-25">
+                    <label for="LAST-NAME">Last Name</label>
+                </div>
+                <div  class="COL-75">
+                    <input type="text" name="LAST-NAME" id="LAST-NAME" placeholder="Your last name..">
+                </div>
+            </div>
+            
+            <div class="ROW">
+                <div class="COL-25">
+                    <label for="COUNTRY">Country</label>
+                </div>
+                <div  class="COL-75">
+                    <select name="COUNTRY" id="COUNTRY">
+                        <div class="OPTIONS">
+                            <option value="CANADA">Canada</option>
+                            <option value="USA">Usa</option>
+                            <option value="EU">Eu</option>
+                        </div>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ROW">
+                <div class="COL-25">
+                    <label for="SUBJECT">Subject</label>
+                </div>
+                <div  class="COL-75">
+                    <textarea name="SUBJECT" id="SUBJECT" placeholder="write something.." style="height: 12.5em;"></textarea>
+                </div>
+            </div>
+
+            <div class="ROW">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 2%;
+        }
+        .boxino{
+            float: left;
+            width: 50%;
+            padding: 5%;
+            height: 30em;
+        }
+        .Box::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:300px) {
+            .boxino{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Equal Height Boxes</h1>
+    <p>Floating boxes with equal heights:</p>
+
+    <div class="Box">
+        <div class="boxino" style="background-color: lightgray;">
+            <h1>Box 1</h1>
+            <p>Some content, some content, some content</p>
+        </div>
+
+        <div class="boxino" style="background-color: gray;">
+            <h1>Box 2</h1>
+            <p>Some content, some content, some content</p>
+            <p>Some content, some content, some content</p>
+            <p>Some content, some content, some content</p>
+        </div>
+    </div>
+    <p>This example not very flexible. It is ok to use CSS height if you can guarantee that the boxes will always have the same amount of content in them, but that's not always the case. If you try the example above on a mobile phone (or resize the browser window), you will see that the second box's content will be displayed outside of the box.</p>
+    <p>Go back to the tutorial and find another solution, if this is not what you want.</p>
+</body>
+</html>

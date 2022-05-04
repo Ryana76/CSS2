@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .cap{
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdown Image</h1>
+    <p>Move the mouse over the image below to open the dropdown content.</p>
+
+    <div class="dropdown">
+        <img src="/014.Visibility and layout/14.7.Opacity/pink1.jpg" alt="" width="100">
+        <div class="dropdown-content">
+            <img src="/014.Visibility and layout/14.7.Opacity/pink1.jpg" alt="">
+            <div class="cap">Pink</div>
+        </div>
+    </div>
+</body>
+</html>

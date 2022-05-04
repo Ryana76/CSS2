@@ -1,0 +1,39 @@
+/* BODY STYLE */
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: white;
+        margin: 0;
+    }
+
+/* NAVIGATION STYLE */
+    .NVIGATION a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 1em .9em;
+        width: 10%;
+        color: white;
+        
+    }
+    .NVIGATION ul{
+        background-color: gray;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .NAVIGATION li{
+
+    }
+
+
+
+
+
+/* CLEAR FIX */
+    .NVIGATION, .CENTER, .FOOTER::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
