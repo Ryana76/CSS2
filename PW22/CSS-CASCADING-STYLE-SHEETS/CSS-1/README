@@ -1,0 +1,113 @@
+h1 { colir : Green;}
+p{ font-size: small; colr black}
+
+usare text style css and favicon
+<!--<link rel="stylesheet" href="#none.gif" type="img/gif">   ----->    favicon
+<!--<link rel="stylesheet" type ="text/css" href="#none.css">   ----->    CSS
+
+i tag sono selezioni e dentro cruce hanno dichiarazione
+
+font{
+    font-family{
+        Tutti font cominciano con la lettera mauiscola, tranne i font generici
+        sono separati da virgole
+        se il loro nome comtiene spazo vanno fra virgoletta
+        strategia di stack
+    }
+    font-size{
+        numeri e percentuale
+        xx-small, x-small, small, medium, large, x-large, xx-large
+        smaller, larger
+    }
+    font-weight{
+        normal o bold
+        bolder o lighter
+        100,200,300,400,500,600,700,800,900
+    }
+    font-style{
+        imposta in carattere a italico o obliquo
+        value{
+            normal
+            italic
+            oblique
+            *normalmente italic e' un fonto separato oblique
+        }
+    }
+    font-variant{
+        cambia il carattere in maiuscoletto
+        value{
+            normal 
+            small-caps
+        }
+    }
+    FONT{
+        Style + Variant + Weight + Size/Line-Height + "Name" + Family...
+
+        *Style + Variant + Weight{
+            OPTIONAL
+            PREFERRED ORDeR
+            must come befor size and family
+        }
+    }
+}
+testo{
+    line-height
+    color{
+        
+        color-RGB{ 
+            red     ---->   HEX RED VALUE
+            green   ---->   HEX GREEN VALUE
+            blue    ---->   HEX BLUE VALUE
+            decimale da 0 a 255
+            esadecimale da0x00 a 0xFF
+        }
+        
+        color-RGBa{
+            color RGB + Canale Alfa
+            per controllo ol livello di trasparenza
+        }
+    }
+    text-align{
+        valori{
+            left
+            right
+            center
+            iustifv
+        }
+    }
+    text-decotarion{
+        valeu{
+            none
+            underline
+            overline
+            line-through
+            blink "?" 
+                * non so perch' non funziona a me dipende da browser
+        }
+    }
+    text-trasfrom{
+        valeu{
+            noncapitalize
+            lowercase
+            uppercase
+        }
+    }
+    letter-spacing / word-spacing{
+        misura
+        normal
+    }
+    text-indent{
+        numeri e percentuale
+    }
+    text-shadow{
+        'horizontal offset' 'vertical offset' 'blur radius' 'color'
+    }
+}
+
+line-height{
+    il raporto fra l'altezza del rigo e il fonto e' importante per la leggibilita'
+    si fa con numeri, percentuale e parole chiave 
+}
+unita' di misura assolute{
+    px, pt, pc, mm, cm, indentnon c'e' certezza du rending, non vanno usate a video
+}

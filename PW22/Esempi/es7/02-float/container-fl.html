@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Test Float</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #container {
+        background: LightYellow;
+        border: 2px dashed blue;
+        margin: 20px auto;
+        width: 800px;
+        /*overflow: auto; Soluzione 1*/
+      }
+
+      #footer {
+        background: LightGrey;
+        font-size: 20px;
+      }
+
+      section {
+        border: 2px solid red;
+        margin: 10px;
+      }
+
+      /*#sec1 {
+        float: left;
+        width: 300px;
+      }
+
+      #sec2 {
+        float: left;
+        width: 300px;
+      }*/
+
+      /*.clearfix{
+            clear: both;
+            border: 1px solid green;
+        }*/
+
+      /*.cfm::after {
+            content: '';
+            display: block;
+            clear: both;
+        }*/
+    </style>
+  </head>
+
+  <body>
+    <div id="container" class="cfm">
+      <section id="sec1">
+        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+        tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+        nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </section>
+      <section id="sec2">
+        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+        tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+        nisi ut aliquid ex ea commodi consequatur.
+      </section>
+    </div>
+    <div id="footer" class="clearfix">Un altro elemento</div>
+  </body>
+</html>

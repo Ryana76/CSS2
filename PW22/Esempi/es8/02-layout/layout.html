@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Layout</title>
+    <style>
+        *{ box-sizing: border-box;margin: 0; padding: 0;}
+        header{
+            background-color: grey;
+            height: 100px;
+            width: 100%;
+            order: 1;
+        }
+        nav{
+            background-color: darkgreen;
+            height: 60px;
+            width: 30%;
+            order: 3;
+        }
+        main{
+            background-color: darkred;
+            opacity: 0.8;
+            height: 400px;
+            width: 40%;
+            order: 2;
+        }
+        aside{
+            background-color: darkblue;
+            height: 600px;
+            width: 30%;
+            order: 4;
+        }
+        footer{
+            clear: both;
+            height: 180px;
+            background-color: lightgray;
+            width: 100%;
+            order: 5;
+        }
+        #container{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>Header</header>
+        <nav>Menu</nav>
+        <main>Main</main>
+        <aside>Sidebar</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
