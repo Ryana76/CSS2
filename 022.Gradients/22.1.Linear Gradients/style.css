@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    border: 2px solid black;
+    padding: 80px;
+    
+    background-image: linear-gradient(to left top, lightgreen, pink, white);
+    /* background-image: linear-gradient(to left, lightgreen, pink, pink, white); */
+    /* background-image: linear-gradient(red, yellow); */
+    
+}
