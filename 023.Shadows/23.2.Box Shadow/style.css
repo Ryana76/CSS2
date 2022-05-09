@@ -1,0 +1,15 @@
+div{
+    padding: 150px;
+    border: 2px solid black;
+    width: 60px;
+    background-image: conic-gradient(red, yellow, green, blue, black) ;
+    opacity: .5;
+    transition: background-image .5s, opacity 2s, width 1s;
+}
+div:hover{
+    background-image: conic-gradient(black, green, blue, red, yellow, ) ;
+    opacity: 1;
+    width: 100%;
+    border-radius: 50%;
+}
+*{box-sizing: border-box;}
