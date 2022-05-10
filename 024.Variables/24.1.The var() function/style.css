@@ -1,0 +1,46 @@
+div.ex1{
+    padding: .5px;
+    background-color: skyblue;
+}
+div.text{
+    padding: 1em;
+    margin: 1em;
+}
+div.contain{
+    margin: 30px;
+    background-color: white;
+    color: skyblue;
+    padding: .5em;
+}
+div.ex1 h1{
+    border-bottom: 2px solid skyblue;
+    margin: 1em;
+}
+div.contain button{
+    background-color: white;
+    border: 1px solid skyblue;
+    color: skyblue;
+}
+:root{
+    --blue: #6495ed;
+    --white: #faf0e6; 
+}
+div.ex2{
+    background-color: var(--blue);
+    padding: 1em;
+}
+div.contain2{
+    color: var(--blue);
+    background-color: var(--white);
+    margin: 1em;
+    padding: 1em;
+}
+div.contain2 h1{
+    border-bottom: 2px solid var(--blue);
+}
+div.button2 button{
+    --blue: #555;
+    border: 1px solid var(--blue);
+    background-color: var(--white);
+    color: var(--blue);
+}

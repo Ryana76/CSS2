@@ -1,0 +1,24 @@
+:root{
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+body{background-color: var(--blue);}
+div.contain{
+    background-color: var(--white);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+div.contain h1{
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    margin: .5em;
+}
+div.contain div.text, div.box-btn{
+    color: var(--blue);
+    margin: 1em;
+}
+button.btn{
+    color: var(--blue);
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+}
