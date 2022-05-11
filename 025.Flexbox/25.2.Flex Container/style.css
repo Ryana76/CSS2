@@ -1,0 +1,80 @@
+body{height:3000px;}
+div.flex-container1{
+    background-color: dodgerblue;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+div.flex-container1 > div{
+    background-color: aliceblue;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+div.flex-container2{
+    background-color: dodgerblue;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+div.flex-container2 > div{
+    background-color: aliceblue;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+div.flex-container3{
+    background-color: dodgerblue;
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+div.flex-container3 > div{
+    background-color: aliceblue;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+div.flex-container4{
+    background-color: dodgerblue;
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    align-items: center;
+    height: 200px;
+    justify-content: center;
+
+}
+div.flex-container4 > div{
+    background-color: aliceblue;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+div.flex-container5{
+    background-color: dodgerblue;
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    align-items: stretch;
+    height: 200px;
+    justify-content: center;
+
+}
+div.flex-container5 > div{
+    background-color: aliceblue;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

@@ -1,0 +1,40 @@
+div.flex-container1{
+    background-color: aliceblue;
+    display: flex;
+}
+div.flex-container1 > div{
+    background-color: dodgerblue;
+    margin: 10px;
+    color: white;
+    line-height: 75px;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+div.flex-container2{
+    background-color: aliceblue;
+    display: flex;
+}
+div.flex-container2 > div{
+    background-color: dodgerblue;
+    margin: 10px;
+    color: white;
+    line-height: 75px;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+div.flex-container3{
+    background-color: aliceblue;
+    display: flex;
+    height: 200px;
+}
+div.flex-container3 > div{
+    background-color: dodgerblue;
+    margin: 10px;
+    color: white;
+    line-height: 75px;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+}

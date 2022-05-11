@@ -1,0 +1,104 @@
+:root{
+    --pink: #f8b4df;
+    --blue: rgb(121, 206, 255);
+    --gray: rgb(176, 176, 176);
+    --imageColor: rgb(255, 226, 231);
+    --white: white;
+    --bakFooter: rgb(234, 234, 234);
+    --border: black;
+}
+*{box-sizing: border-box;}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header */
+div.header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+div.htop{
+    /* border: 2px solid var(--border); */
+    flex-wrap: wrap;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 20px;
+}
+div.hbottom{
+    /* border: 2px solid var(--border);
+    border-top: none; */
+    background-color: var(--pink);
+    padding: 35px;
+    color: var(--white);
+    font-size: 30px;
+}
+
+/* Nav */
+div.navbar{
+    display: flex;
+    background-color: var(--gray);
+    /* border: 2px solid var(--border);
+    border-top: none; */
+}
+div.navbar a{
+    color: var(--white);
+    padding: 16px 30px;
+    text-align: center;
+    font-size: 20px;
+    /* border-right: 2px solid var(--border); */
+}
+div.navbar a:hover{
+    background-color: gray;
+    color: var(--pink);
+}
+
+div.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.side{
+    flex: 30%;
+    /* border: 2px solid var(--border);
+    border-top: none; */
+    --bakFooter: rgb(247, 246, 246);
+    padding: 16px;
+    background-color: var(--bakFooter);
+}
+div.main{
+    flex: 70%;
+    /* border: 2px solid var(--border);
+    border-top: none;
+    border-left: none; */
+    padding: 16px;
+}
+div.img{
+    background-color: deeppink;
+    margin: 10px 0;
+    padding: 20px;
+}
+h5{
+    font-size: 12px;
+}
+div.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: var(--bakFooter);
+}
+@media screen and (max-width:1000px) {
+    div.container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:700px) {
+    div.navbar, div.container{
+        flex-direction: column;
+    }
+}
