@@ -1,0 +1,71 @@
+*{box-sizing: border-box;}
+html{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    padding: 3%;
+}
+.header{
+    background-color: blueviolet;
+    color: white;
+    padding: 2%;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    background-color: skyblue;
+    color: white;
+    padding: 2%;
+    margin: 2% 0;
+}
+.menu li:hover{background-color: rgb(28, 191, 255);}
+.aside{
+    background-color: skyblue;
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+.footer{
+    color: white;
+    background-color: rgb(28, 191, 255);
+    padding: 3%;
+    text-align: center;
+}
+@media only screen and (min-width: 600px) {
+    
+    .col-s-1{width: 8.33%}
+    .col-s-2{width: 16.66%}
+    .col-s-3{width: 25%}
+    .col-s-4{width: 33.33%}
+    .col-s-5{width: 41.66%}
+    .col-s-6{width: 50%}
+    .col-s-7{width: 58.33%}
+    .col-s-8{width: 66.66%}
+    .col-s-9{width: 70%}
+    .col-s-10{width: 78.33%}    
+    .col-s-11{width: 91.66%}    
+    .col-s-12{width: 100%}
+}
+@media only screen and (min-width: 768px) {
+    
+    .col-1{width: 8.33%}
+    .col-2{width: 16.66%}
+    .col-3{width: 25%}
+    .col-4{width: 33.33%}
+    .col-5{width: 41.66%}
+    .col-6{width: 50%}
+    .col-7{width: 58.33%}
+    .col-8{width: 66.66%}
+    .col-9{width: 70%}
+    .col-10{width: 78.33%}    
+    .col-11{width: 91.66%}    
+    .col-12{width: 100%}
+}

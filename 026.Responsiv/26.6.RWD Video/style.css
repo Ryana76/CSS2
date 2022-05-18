@@ -1,0 +1,68 @@
+/* div.ex1 video{
+    width: 100%;
+    height: auto;
+} */
+/* 
+div.ex2 video{
+    max-width: 100%;
+    height: auto;
+} */
+
+*{box-sizing: border-box;}
+
+div.ex3 div.header{
+    background-color: blueviolet;
+    padding: 16px;
+    color: white;
+}
+
+div.ex3 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.ex3 li{
+    background-color: skyblue;
+    color: white;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+div.ex3 li:hover{
+    background-color: rgb(41, 194, 255);
+}
+
+div.container video{
+    width: 100%;
+    height: auto;
+}
+div.ex3 div.side{
+    background-color: skyblue;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+div.ex3 div.footer{
+    background-color: rgb(41, 194, 255);
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+[class *= "col-"]{
+    width: 100%;
+    padding: 16px;
+    float: left;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+

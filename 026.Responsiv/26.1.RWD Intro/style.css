@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+div.header{
+    background-color: blueviolet;
+    padding: 20px;
+    color: white;
+}
+div.container{
+    display: flex;
+}
+div.main{
+    display: flex;
+    flex: 80%;
+}
+div.rightSide{
+    flex: 20%;
+    background-color: skyblue;
+    padding: 10px 10px;
+    margin: 8px;
+    color: white;
+    text-align: center;
+}
+div.leftSide{
+    flex: 30%;
+}
+div.leftSide p{
+    background-color: skyblue;
+    padding: 10px 20px;
+    margin: 8px;
+    color: white;
+}
+
+div.leftSide p:hover{
+    background-color: lightblue;
+}
+div.contain{
+    flex: 70%;
+    
+    margin: 15px;
+}
+div.footer{
+    background-color: rgb(15, 130, 238);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    div.container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.container{
+        flex-direction: column;
+    }
+    div.main{
+        flex-direction: column;
+    }
+}

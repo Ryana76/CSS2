@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+div.row{
+    display: flex;
+    flex-direction: row;
+}
+div.col-9, div.header, div.col-3{
+    border: 2px solid red;
+    padding: 15px;
+}
+@media screen and (max-width: 800px) {
+    div.row{
+        flex-direction: column;
+    }
+    div.col-3{width: 100%;}    
+    div.col-9{width: 100%;}
+
+}
+.col-1{width:8.33%}
+.col-2{width:16.66%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:86.66%}
+.col-12{width:100%}
+
