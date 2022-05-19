@@ -1,0 +1,218 @@
+*{box-sizing: border-box;}
+div.grid-container1{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    gap: 10px;
+}
+div.grid-container1 > div{
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+div.grid-container2{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;
+    grid-template-rows: 80px 200px;
+    padding: 10px;
+    gap: 10px;
+}
+div.grid-container2 > div{
+    background-color: white;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div.grid-container3{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    padding: 10px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+div.grid-container3 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.grid-container4{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+}
+div.grid-container4 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.grid-container5{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+div.grid-container5 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.grid-container6{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+div.grid-container6 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.grid-container7{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: start;
+}
+div.grid-container7 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+div.grid-container8{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: end;
+}
+div.grid-container8 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+div.grid-container40{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    height: 400px;
+    align-content: center;
+}
+div.grid-container40 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.grid-container50{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    height: 400px;
+    align-content: start;
+}
+div.grid-container50 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.grid-container60{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    height: 400px;
+    align-content: end;
+}
+div.grid-container60 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.grid-container70{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    height: 400px;
+    align-content: space-around;
+}
+div.grid-container70 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+div.grid-container80{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    height: 400px;
+    align-content: space-between;
+}
+div.grid-container80 > div{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
